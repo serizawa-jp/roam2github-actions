@@ -40,6 +40,6 @@ jobs:
           BACKUP_MARKDOWN: true
 
       - name: Commit Changes
-        uses: everruler12/git-auto-commit-action@eda7f2633a8be768070d2742d35c8c22f22dea07 
+        uses: serizawa-jp/git-auto-commit-action@latest
         with:
           commit_message: Automatic backup
