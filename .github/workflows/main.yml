@@ -27,7 +27,7 @@ jobs:
       - name: Run Backup
         run: |
           cd /tmp
-          git clone -q https://github.com/everruler12/roam2github.git roam2github
+          git clone -q https://github.com/serizawa-jp/roam2github.git roam2github
           cd $_
           npm i
           npm run backup -s
@@ -40,6 +40,6 @@ jobs:
           BACKUP_MARKDOWN: true
 
       - name: Commit Changes
-        uses: everruler12/git-auto-commit-action@latest
+        uses: serizawa-jp/git-auto-commit-action@latest
         with:
           commit_message: Automatic backup
